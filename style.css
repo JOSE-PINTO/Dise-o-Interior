@@ -1,0 +1,103 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+/* imagen de fondo de la pagina, posicion del fondo y tipo de letra */
+body {
+  background-image: url(estudio4.jpg);
+  background-size: cover;
+  background-position: initial;
+
+  font-family: "Times New Roman", Times, serif;
+}
+/* color del fondo de menu  en la parte superior  */
+.menu {
+  background: linear-gradient(black, rgb(78, 78, 114));
+  text-align: center;
+}
+/* tipo de vista de la lista y color */
+.menu ul {
+  display: flex;
+  list-style: none;
+  color: #ffff;
+}
+/* tamaño de los items de la lista junto al tamaño de la letra del menu */
+.menu ul li {
+  width: 132px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+/* apariencia del munu de "a" */
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Llamado de las calses .boton mas todo el menu junto a la funcion hover para darle transfondo al menu */
+.boton,
+.menu ul li a:hover {
+  color: rgb(116, 116, 179);
+  border-radius: 3px;
+}
+/* color de la calse fas junto a el margen de posicion, esta clase refiere a los iconos implementados  en los menus */
+.menu .fas {
+  margin-right: 10px;
+  color: #ffff;
+}
+/* Modo de vista de la clase sub-menu1, menu que es hijo de la primera lista superior. */
+.sub-menu {
+  display: none;
+}
+/* estilo del bublstado junto a su trasfondo */
+.menu ul li:hover .sub-menu{
+  display: block;
+  position: absolute;
+  background: linear-gradient(black, rgb(78, 78, 114));
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+
+.menu ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #ffff;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+
+.menu ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+
+.menu ul li:hover .sub-menu ul li a:hover{
+    color: rgb(116, 116, 179);
+}
+ 
+.fa-chevron-right{
+    float: right;
+}
+
+
+
+.submenu1{
+    display: none;
+}
+
+.hover:hover .submenu1{
+    position: absolute;
+    display: block;
+    margin-top: -38px;
+    margin-left: 140px;
+    background: linear-gradient(black, rgb(78, 78, 114));
+    
+}
+
